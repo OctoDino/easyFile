@@ -50,10 +50,10 @@ function readFor(dirname, fileName, searchedContent) {
 function exists(dirname, fileName) {
     fs.exists(path.join(dirname, fileName), function(exists) {
         if (exists) {
-            var output = "File " + fileName + " exists.";
+            var output = true;
             return output;
         } else {
-            var output = "File " + fileName + " does not exist.";
+            var output = false;
             return output;
         }
     })
