@@ -84,6 +84,7 @@ function exists(dirname, fileName) {
 }
 
 //copy a file from dirname to targetDirname
+/*
 function copy(dirname, fileName, targetDirname, newFileName) {
     fs.copyFile(path.join(dirname, fileName), path.join(targetDirname, newFileName), function(err) {
         if (err) {
@@ -93,6 +94,7 @@ function copy(dirname, fileName, targetDirname, newFileName) {
         return output;
     })
 }
+*/
 
 //rename a file
 function rename(dirname, fileName, newFileName) {
@@ -123,7 +125,7 @@ module.exports = {
     deleteFile: deleteFile,
     readFor: readFor,
     exists: exists,
-    copy: copy,
+    //copy: copy,
     rename: rename,
     read: read
 };
