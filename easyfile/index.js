@@ -97,6 +97,10 @@ function exists(dirname, fileName) {
 //copy a file from dirname to targetDirname
 /*TODO: Not Production ready!
 function copy(dirname, fileName, targetDirname, newFileName) {
+    if(newFileName == null){
+        newFileName = 'copy' + fileName;
+        console.error(`No new file name given! Created file now with newFileName = ${fileName}`);
+    }
     fs.copyFile(path.join(dirname, fileName), path.join(targetDirname, newFileName), function(err) {
         if (err) {
             return console.error(err);
