@@ -5,16 +5,24 @@ var fs = require('fs');
 
 //Create new file
 function create(dirname, fileName, fileContent) {
-fs.writeFile(path.join(dirname, fileName), fileContent, function(err) {
-        if (err) {
-            return console.error(err);
-        }
-        var output = "File " + fileName + " was created.";
-        return output;
-    })
+    if(fileContent == null){
+        console.error("No file content given!");
+        fileContent = "";
+    }
+    fs.writeFile(path.join(dirname, fileName), fileContent, function(err) {
+            if (err) {
+                return console.error(err);
+            }
+            var output = "File " + fileName + " was created.";
+            return output;
+        })
 };
 
 function write(dirname, fileName, fileContent) {
+    if(fileContent == null){
+        console.error("No file content given!");
+        fileContent = "";
+    }
     fs.writeFile(path.join(dirname, fileName), fileContent, function(err) {
         if (err) {
             return console.error(err);
