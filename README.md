@@ -16,6 +16,8 @@ To install the package, run the following command:
 git clone https://github.com/OctoDino/easyFile
 ```
 
+**OR**
+Download the last [realease](https://github.com/OctoDino/easyFile/releases) and download the newest `easyFile.zip`
 ## Usage
 ```javascript
 // Import easyFile
