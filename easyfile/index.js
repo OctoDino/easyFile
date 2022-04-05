@@ -9,7 +9,7 @@ var fs = require('fs');
 //Create new file
 function create(dirname, fileName, fileContent) {
     if(fileContent == null){
-        console.error("No file content given!");
+        console.error("No file content given! Created file now with fileContent = ''");
         fileContent = "";
     }
     fs.writeFile(path.join(dirname, fileName), fileContent, function(err) {
@@ -23,7 +23,7 @@ function create(dirname, fileName, fileContent) {
 
 function write(dirname, fileName, fileContent) {
     if(fileContent == null){
-        console.error("No file content given!");
+        console.error("No file content given! Created file now with fileContent = ''");
         fileContent = "";
     }
     fs.writeFile(path.join(dirname, fileName), fileContent, function(err) {
@@ -116,13 +116,15 @@ function rename(dirname, fileName, newFileName) {
             return output;
             //break funcion
         }
-    fs.rename(path.join(dirname, fileName), path.join(dirname, newFileName), function(err) {
-        if (err) {
-            return console.error(err);
+        else{
+            fs.rename(path.join(dirname, fileName), path.join(dirname, newFileName), function(err) {
+                if (err) {
+                    return console.error(err);
+                }
+                var output = "File " + fileName + " was renamed to " + newFileName + ".";
+                return output;
+            })
         }
-        var output = "File " + fileName + " was renamed to " + newFileName + ".";
-        return output;
-    })
 }
 
 //get the full data of a file
