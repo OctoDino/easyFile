@@ -12,6 +12,7 @@ easyfile.write(__dirname, 'test.txt', 'Hello out there!');
 
 //Complex Tests
 //look if file exist
+easyfile.create(__dirname, 'data.json', '{"name":"John Doe"}');
 var isFile = easyfile.exists(__dirname, 'data.json');
 console.log(isFile)
 if(isFile){
@@ -19,6 +20,6 @@ if(isFile){
     var index = easyfile.readFor(__dirname, 'data.json', '"name":');
     console.log(index)
 }else{
-    //copy file
-    easyfile.copy(__dirname, 'data.json', __dirname, 'data2.json');
+    //Create file
+    easyfile.create(__dirname, 'data.json', '{"name":"John Doe"}');
 }
