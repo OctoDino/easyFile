@@ -1,3 +1,6 @@
+
+
+
 //Include path libary
 var path = require('path');
 //Include fs libary
@@ -81,12 +84,12 @@ function exists(dirname, fileName) {
 }
 
 //copy a file from dirname to targetDirname
-function copy(dirname, fileName, targetDirname) {
-    fs.copyFile(path.join(dirname, fileName), path.join(targetDirname, fileName), function(err) {
+function copy(dirname, fileName, newFileName, targetDirname) {
+    fs.copyFile(path.join(dirname, fileName), path.join(targetDirname, newFileName), function(err) {
         if (err) {
             return console.error(err);
         }
-        var output = "File " + fileName + " was copied.";
+        var output = "File " + fileName + " was copied to " + targetDirname + " with the name " + newFileName + ".";
         return output;
     })
 }
