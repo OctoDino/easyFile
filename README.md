@@ -2,12 +2,12 @@
 Create, write and read easiely Files any kind
 
 #### Table of content
-- [Installation](##installation)
-- [Usage](##usage)
-- [License](##license)
-- [Contributing](##contributing)
-- [Tests](##tests)
-- [Questions](##questions)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
 
 ## Installation
 To install the package, run the following command:
