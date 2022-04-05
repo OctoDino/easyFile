@@ -1,6 +1,8 @@
-deleteFile: deleteFile,
-readFor: readFor,
-copy: copy,
-read: read
+deleteFile
+readFor
+copy
+read
 
 Make these things work!
+
+Improve stable and Security
