@@ -19,5 +19,6 @@ if(isFile){
     var index = easyfile.readFor(__dirname, 'data.json', '"name":');
     console.log(index)
 }else{
-    
+    //copy file
+    easyfile.copy(__dirname, 'data.json', __dirname, 'data2.json');
 }
