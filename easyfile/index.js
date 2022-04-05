@@ -142,7 +142,7 @@ function read(dirname, fileName) {
 module.exports = {
     create: create,
     write: write,
-    deleteFile: deleteFile,
+    //deleteFile: deleteFile,
     //readFor: readFor,
     exists: exists,
     //copy: copy,
