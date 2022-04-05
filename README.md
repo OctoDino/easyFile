@@ -18,6 +18,7 @@ git clone https://github.com/OctoDino/easyFile
 
 ## Usage
 ```javascript
+// Import easyFile
 var easyFile = require('easyFile');
 
 ```
