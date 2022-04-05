@@ -16,9 +16,8 @@ easyfile.create(__dirname, 'data.json', '{"name":"John Doe"}');
 var isFile = easyfile.exists(__dirname, 'data.json');
 console.log(isFile)
 if(isFile){
-    //read file for a specific word
-    var index = easyfile.readFor(__dirname, 'data.json', '"name":');
-    console.log(index)
+    //rename file
+    easyfile.rename(__dirname, 'data.json', 'data2.json');
 }else{
     //Create file
     easyfile.create(__dirname, 'data.json', '{"name":"John Doe"}');
