@@ -1,0 +1,6 @@
+deleteFile: deleteFile,
+readFor: readFor,
+copy: copy,
+read: read
+
+Make these things work!
