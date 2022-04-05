@@ -19,15 +19,5 @@ if(isFile){
     var index = easyfile.readFor(__dirname, 'data.json', '"name":');
     console.log(index)
 }else{
-    const test = {
-        "name": "John",
-        "age": 30,
-        "cars": [
-            "Ford",
-            "BMW",
-            "Fiat"
-        ]
-    }
-    //create a new file
-    easyfile.create(__dirname, 'data.json', test);
+    
 }
