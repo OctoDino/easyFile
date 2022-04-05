@@ -48,7 +48,7 @@ function readFor(dirname, fileName, searchedContent) {
 
 //look if file exists
 function exists(dirname, fileName) {
-    fs.exists(path.join(dirname, fileName), function(exists) {
+    /*fs.exists(path.join(dirname, fileName), function(exists) {
         if (exists) {
             var output = true;
             return output;
@@ -57,6 +57,19 @@ function exists(dirname, fileName) {
             return output;
         }
     })
+    */
+    try {
+        if (fs.existsSync(dirname + '/' + fileName)) {
+          //file exists
+          var output = true;
+            return output;
+        }else{
+            var output = false;
+            return output;
+        }
+      } catch(err) {
+        console.error(err)
+      }
 }
 
 //copy a file from dirname to targetDirname
