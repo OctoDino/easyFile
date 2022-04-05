@@ -23,7 +23,8 @@ var easyFile = require('easyFile');
 ```
 
 ## License
-This project is licensed under the MIT license.
+This project is licensed under the Apache License 2.0.
+http://www.apache.org/licenses/
 
 ## Contributing
 Please feel free to open an issue or make a pull request.
