@@ -1,27 +1,33 @@
 //import index.js from easyfile folder as module
 var easyfile = require('../easyfile/index.js');
+//import easyfile from '../easyfile/index.js';
 
-//write file
-//when file don't exist it will be created!
-easyfile.write('test/test.txt', 'Hello World!');
+//create a new file
+//When file already exists, it will be overwritten!
+easyfile.create(__dirname, 'test.txt', 'Hello World!-');
 
-//readFile
-var output = easyfile.read('test/test.txt');
-console.log(output);
+//write a file
+//when the file does not exist, it will be created!
+easyfile.write(__dirname, 'test.txt', 'Hello out there!');
 
-//create file
-easyfile.create('test/test.json');
-
-//rename a file
-easyfile.rename('test/test.json', 'test/test2.json');
-
-//read for a specific word
-output = easyfile.readFor('test/test2.json', 'Hello');
-console.log(output);
-
-//delete a file
-easyfile.deleteFile('test/test2.json');
-
-//look if a file exist
-output = easyfile.exists('test/test2.json');
-console.log(output);
+//Complex Tests
+//look if file exist
+var isFile = easyfile.exists(__dirname, 'data.json');
+console.log(isFile)
+if(isFile){
+    //read file for a specific word
+    var index = easyfile.readFor(__dirname, 'data.json', '"name":');
+    console.log(index)
+}else{
+    const test = {
+        "name": "John",
+        "age": 30,
+        "cars": [
+            "Ford",
+            "BMW",
+            "Fiat"
+        ]
+    }
+    //create a new file
+    easyfile.create(__dirname, 'data.json', test);
+}
