@@ -13,7 +13,7 @@ Create, write and read easiely Files any kind
 To install the package, run the following command:
 
 ```bash
-npm install easyFile
+git clone https://github.com/OctoDino/easyFile
 ```
 
 ## Usage
@@ -32,6 +32,13 @@ Please feel free to open an issue or make a pull request.
 ## Tests 
 
 Look in the `test` folder for test files. There you see **EasyFiles** in action with some samples.
+`main.js` => Generatesting script for test any kind
+
+`create.js` => Test file for `create`, `rename`, `delete`, `copy`, `search` a file
+
+`read.js` => Test file for `read` and `readFor` a file
+
+`write.js` => Test file for `write` and `rewrite` a file
 
 ## Questions
 If you have any questions about the project, open an issue or make a pull request.
