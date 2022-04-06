@@ -1,0 +1,1 @@
+// `write.js` => Test file for `write` and `rewrite` a file
