@@ -39,7 +39,7 @@ Look in the `test` folder for test files. There you see **EasyFiles** in action 
 
 `create.js` => Test file for `create`, `rename`, `delete`, `copy`, `search` a file
 
-`read.js` => Test file for `read` and `readFor` a file
+`read.js` => Test file for `read`, `get` and `readFor` a file
 
 `write.js` => Test file for `write` and `rewrite` a file
 
