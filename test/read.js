@@ -1,0 +1,1 @@
+// `read.js` => Test file for `read` and `readFor` a file
