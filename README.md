@@ -2,12 +2,12 @@
 Create, write and read easiely Files any kind
 
 #### Table of content
-- [Installation](##installation)
-- [Usage](##usage)
-- [License](##license)
-- [Contributing](##contributing)
-- [Tests](##tests)
-- [Questions](##questions)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
 
 ## Installation
 To install the package, run the following command:
@@ -16,6 +16,8 @@ To install the package, run the following command:
 git clone https://github.com/OctoDino/easyFile
 ```
 
+**OR**
+Download the last [realease](https://github.com/OctoDino/easyFile/releases) and download the newest `easyFile.zip`
 ## Usage
 ```javascript
 // Import easyFile
@@ -37,7 +39,7 @@ Look in the `test` folder for test files. There you see **EasyFiles** in action 
 
 `create.js` => Test file for `create`, `rename`, `delete`, `copy`, `search` a file
 
-`read.js` => Test file for `read` and `readFor` a file
+`read.js` => Test file for `read`, `get` and `readFor` a file
 
 `write.js` => Test file for `write` and `rewrite` a file
 
